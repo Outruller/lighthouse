@@ -17,7 +17,7 @@ class MainThreadTasks extends Audit {
       id: 'main-thread-tasks',
       scoreDisplayMode: Audit.SCORING_MODES.INFORMATIVE,
       title: 'Tasks',
-      description: 'Lists the tasks that executed during page load.',
+      description: 'Lists the toplevel main thread tasks that executed during page load.',
       requiredArtifacts: ['traces'],
     };
   }
@@ -32,7 +32,7 @@ class MainThreadTasks extends Audit {
     const tasks = await MainThreadTasksComputed.request(trace, context);
 
     const results = tasks
-      .filter(task => task.duration > 5)
+      .filter(task => task.duration > 5 && task.parent)
       .map(task => {
         return {
           type: task.group.id,

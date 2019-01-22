@@ -1037,10 +1037,10 @@
     "main-thread-tasks": {
       "id": "main-thread-tasks",
       "title": "Tasks",
-      "description": "Lists the tasks that executed during page load.",
+      "description": "Lists the toplevel main thread tasks that executed during page load.",
       "score": null,
       "scoreDisplayMode": "informative",
-      "rawValue": 55,
+      "rawValue": 39,
       "details": {
         "type": "table",
         "headings": [
@@ -1065,16 +1065,6 @@
         "items": [
           {
             "type": "other",
-            "duration": 5.272,
-            "startTime": 598.738
-          },
-          {
-            "type": "other",
-            "duration": 26.926,
-            "startTime": 604.035
-          },
-          {
-            "type": "other",
             "duration": 26.823,
             "startTime": 604.125
           },
@@ -1085,18 +1075,8 @@
           },
           {
             "type": "other",
-            "duration": 6.681,
-            "startTime": 630.994
-          },
-          {
-            "type": "other",
             "duration": 5.89,
             "startTime": 631.458
-          },
-          {
-            "type": "other",
-            "duration": 19.718,
-            "startTime": 637.706
           },
           {
             "type": "other",
@@ -1115,11 +1095,6 @@
           },
           {
             "type": "other",
-            "duration": 7.812,
-            "startTime": 666.147
-          },
-          {
-            "type": "other",
             "duration": 5.897,
             "startTime": 668.051
           },
@@ -1130,18 +1105,8 @@
           },
           {
             "type": "other",
-            "duration": 10.087,
-            "startTime": 2639.59
-          },
-          {
-            "type": "other",
             "duration": 5.516,
             "startTime": 2643.396
-          },
-          {
-            "type": "other",
-            "duration": 983.081,
-            "startTime": 2854.095
           },
           {
             "type": "other",
@@ -1195,11 +1160,6 @@
           },
           {
             "type": "other",
-            "duration": 123.752,
-            "startTime": 3839.839
-          },
-          {
-            "type": "other",
             "duration": 123.208,
             "startTime": 3840.307
           },
@@ -1230,21 +1190,6 @@
           },
           {
             "type": "other",
-            "duration": 5.338,
-            "startTime": 3980.383
-          },
-          {
-            "type": "other",
-            "duration": 6.574,
-            "startTime": 3986.1
-          },
-          {
-            "type": "other",
-            "duration": 96.198,
-            "startTime": 3996.134
-          },
-          {
-            "type": "other",
             "duration": 94.261,
             "startTime": 3996.555
           },
@@ -1260,23 +1205,8 @@
           },
           {
             "type": "other",
-            "duration": 9.23,
-            "startTime": 4098.379
-          },
-          {
-            "type": "other",
             "duration": 5.151,
             "startTime": 4098.541
-          },
-          {
-            "type": "other",
-            "duration": 5.463,
-            "startTime": 4784.783
-          },
-          {
-            "type": "other",
-            "duration": 127.282,
-            "startTime": 4808.602
           },
           {
             "type": "other",
@@ -1315,18 +1245,8 @@
           },
           {
             "type": "other",
-            "duration": 6.885,
-            "startTime": 8603.411
-          },
-          {
-            "type": "other",
             "duration": 6.849,
             "startTime": 8603.435
-          },
-          {
-            "type": "other",
-            "duration": 7.258,
-            "startTime": 10219.292
           },
           {
             "type": "other",
