@@ -3257,6 +3257,14 @@
           "weight": 0
         },
         {
+          "id": "network-rtt",
+          "weight": 0
+        },
+        {
+          "id": "network-server-latency",
+          "weight": 0
+        },
+        {
           "id": "main-thread-tasks",
           "weight": 0
         },
@@ -4178,6 +4186,18 @@
       },
       {
         "startTime": 0,
+        "name": "lh:audit:network-rtt",
+        "duration": 100,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 0,
+        "name": "lh:audit:network-server-latency",
+        "duration": 100,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 0,
         "name": "lh:audit:main-thread-tasks",
         "duration": 100,
         "entryType": "measure"
@@ -4820,6 +4840,18 @@
             "timeInMs": 16
           },
           "path": "audits[estimated-input-latency].displayValue"
+        },
+        {
+          "values": {
+            "timeInMs": 1.7249999999999943
+          },
+          "path": "audits[network-rtt].displayValue"
+        },
+        {
+          "values": {
+            "timeInMs": 572.829
+          },
+          "path": "audits[network-server-latency].displayValue"
         }
       ],
       "lighthouse-core/audits/time-to-first-byte.js | title": [
@@ -4884,7 +4916,9 @@
         "audits[mainthread-work-breakdown].details.headings[0].text"
       ],
       "lighthouse-core/lib/i18n/i18n.js | columnTimeSpent": [
-        "audits[mainthread-work-breakdown].details.headings[1].text"
+        "audits[mainthread-work-breakdown].details.headings[1].text",
+        "audits[network-rtt].details.headings[1].text",
+        "audits[network-server-latency].details.headings[1].text"
       ],
       "lighthouse-core/audits/bootup-time.js | title": [
         "audits[bootup-time].title"
@@ -4894,6 +4928,8 @@
       ],
       "lighthouse-core/lib/i18n/i18n.js | columnURL": [
         "audits[bootup-time].details.headings[0].text",
+        "audits[network-rtt].details.headings[0].text",
+        "audits[network-server-latency].details.headings[0].text",
         "audits[uses-long-cache-ttl].details.headings[0].text",
         "audits[total-byte-weight].details.headings[0].text",
         "audits[render-blocking-resources].details.headings[0].label",
@@ -4927,6 +4963,18 @@
       ],
       "lighthouse-core/audits/font-display.js | description": [
         "audits[font-display].description"
+      ],
+      "lighthouse-core/audits/network-rtt.js | title": [
+        "audits[network-rtt].title"
+      ],
+      "lighthouse-core/audits/network-rtt.js | description": [
+        "audits[network-rtt].description"
+      ],
+      "lighthouse-core/audits/network-server-latency.js | title": [
+        "audits[network-server-latency].title"
+      ],
+      "lighthouse-core/audits/network-server-latency.js | description": [
+        "audits[network-server-latency].description"
       ],
       "lighthouse-core/audits/accessibility/aria-allowed-attr.js | title": [
         "audits[aria-allowed-attr].title"

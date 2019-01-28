@@ -1802,6 +1802,74 @@
             "scoreDisplayMode": "informative", 
             "title": "Network Requests"
         }, 
+        "network-rtt": {
+            "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).", 
+            "details": {
+                "headings": [
+                    {
+                        "itemType": "text", 
+                        "key": "origin", 
+                        "text": "URL"
+                    }, 
+                    {
+                        "granularity": 1.0, 
+                        "itemType": "ms", 
+                        "key": "rtt", 
+                        "text": "Time Spent"
+                    }
+                ], 
+                "items": [
+                    {
+                        "origin": "http://ajax.googleapis.com", 
+                        "rtt": 1.7249999999999943
+                    }, 
+                    {
+                        "origin": "http://localhost:10200", 
+                        "rtt": 0.8639999999999999
+                    }
+                ], 
+                "type": "table"
+            }, 
+            "displayValue": "0\u00a0ms", 
+            "id": "network-rtt", 
+            "score": null, 
+            "scoreDisplayMode": "informative", 
+            "title": "Network Round Trip Times"
+        }, 
+        "network-server-latency": {
+            "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).", 
+            "details": {
+                "headings": [
+                    {
+                        "itemType": "text", 
+                        "key": "origin", 
+                        "text": "URL"
+                    }, 
+                    {
+                        "granularity": 1.0, 
+                        "itemType": "ms", 
+                        "key": "serverReponseTime", 
+                        "text": "Time Spent"
+                    }
+                ], 
+                "items": [
+                    {
+                        "origin": "http://localhost:10200", 
+                        "serverReponseTime": 572.829
+                    }, 
+                    {
+                        "origin": "http://ajax.googleapis.com", 
+                        "serverReponseTime": 562.398
+                    }
+                ], 
+                "type": "table"
+            }, 
+            "displayValue": "570\u00a0ms", 
+            "id": "network-server-latency", 
+            "score": null, 
+            "scoreDisplayMode": "informative", 
+            "title": "Server Backend Latencies"
+        }, 
         "no-document-write": {
             "description": "For users on slow connections, external scripts dynamically injected via `document.write()` can delay page load by tens of seconds. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/document-write).", 
             "details": {
@@ -3302,6 +3370,14 @@
                     "weight": 0.0
                 }, 
                 {
+                    "id": "network-rtt", 
+                    "weight": 0.0
+                }, 
+                {
+                    "id": "network-server-latency", 
+                    "weight": 0.0
+                }, 
+                {
                     "id": "main-thread-tasks", 
                     "weight": 0.0
                 }, 
@@ -3962,6 +4038,18 @@
                 "duration": 100.0, 
                 "entryType": "measure", 
                 "name": "lh:audit:network-requests", 
+                "startTime": 0.0
+            }, 
+            {
+                "duration": 100.0, 
+                "entryType": "measure", 
+                "name": "lh:audit:network-rtt", 
+                "startTime": 0.0
+            }, 
+            {
+                "duration": 100.0, 
+                "entryType": "measure", 
+                "name": "lh:audit:network-server-latency", 
                 "startTime": 0.0
             }, 
             {
