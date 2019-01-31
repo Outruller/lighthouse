@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const Audit = require('./audit');
+const Audit = require('./audit.js');
 const i18n = require('../lib/i18n/i18n.js');
 const NetworkAnalysisComputed = require('../computed/network-analysis.js');
 
@@ -49,14 +49,12 @@ class NetworkRTT extends Audit {
     /** @type {Array<{origin: string, rtt: number}>} */
     const results = [];
     for (const [origin, additionalRtt] of analysis.additionalRttByOrigin.entries()) {
-      // TODO: https://github.com/GoogleChrome/lighthouse/issues/7041
-      if (!Number.isFinite(additionalRtt)) continue;
       // Ignore entries that don't look like real origins, like the __SUMMARY__ entry.
       if (!origin.startsWith('http')) continue;
 
       const rtt = additionalRtt + baseRtt;
       results.push({origin, rtt});
-      maxRtt = Math.max(rtt, maxRtt);
+      maxRtt = Number.isFinite(rtt) ? Math.max(rtt, maxRtt) : maxRtt;
     }
 
     results.sort((a, b) => b.rtt - a.rtt);

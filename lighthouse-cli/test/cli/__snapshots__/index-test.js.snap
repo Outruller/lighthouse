@@ -794,16 +794,34 @@ Object {
           "weight": 0,
         },
         Object {
+          "group": "diagnostics",
+          "id": "user-timings",
+          "weight": 0,
+        },
+        Object {
+          "group": "diagnostics",
+          "id": "bootup-time",
+          "weight": 0,
+        },
+        Object {
+          "group": "diagnostics",
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+        },
+        Object {
+          "group": "diagnostics",
+          "id": "font-display",
+          "weight": 0,
+        },
+        Object {
           "id": "network-requests",
           "weight": 0,
         },
         Object {
-          "group": "diagnostics",
           "id": "network-rtt",
           "weight": 0,
         },
         Object {
-          "group": "diagnostics",
           "id": "network-server-latency",
           "weight": 0,
         },
@@ -820,31 +838,11 @@ Object {
           "weight": 0,
         },
         Object {
-          "group": "diagnostics",
-          "id": "user-timings",
-          "weight": 0,
-        },
-        Object {
-          "group": "diagnostics",
-          "id": "bootup-time",
-          "weight": 0,
-        },
-        Object {
           "id": "screenshot-thumbnails",
           "weight": 0,
         },
         Object {
           "id": "final-screenshot",
-          "weight": 0,
-        },
-        Object {
-          "group": "diagnostics",
-          "id": "mainthread-work-breakdown",
-          "weight": 0,
-        },
-        Object {
-          "group": "diagnostics",
-          "id": "font-display",
           "weight": 0,
         },
       ],
