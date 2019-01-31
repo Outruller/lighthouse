@@ -7,7 +7,6 @@
 
 const NetworkRTT = require('../../audits/network-rtt.js');
 
-const acceptableTrace = require('../fixtures/traces/progressive-app-m60.json');
 const acceptableDevToolsLog = require('../fixtures/traces/progressive-app-m60.devtools.log.json');
 
 /* eslint-env jest */

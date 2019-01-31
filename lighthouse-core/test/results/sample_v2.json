@@ -3300,6 +3300,26 @@
           "group": "diagnostics"
         },
         {
+          "id": "user-timings",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "bootup-time",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "font-display",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
           "id": "network-requests",
           "weight": 0
         },
@@ -3324,32 +3344,12 @@
           "weight": 0
         },
         {
-          "id": "user-timings",
-          "weight": 0,
-          "group": "diagnostics"
-        },
-        {
-          "id": "bootup-time",
-          "weight": 0,
-          "group": "diagnostics"
-        },
-        {
           "id": "screenshot-thumbnails",
           "weight": 0
         },
         {
           "id": "final-screenshot",
           "weight": 0
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "weight": 0,
-          "group": "diagnostics"
-        },
-        {
-          "id": "font-display",
-          "weight": 0,
-          "group": "diagnostics"
         }
       ],
       "id": "performance",

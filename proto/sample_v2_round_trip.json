@@ -3411,6 +3411,26 @@
                     "weight": 0.0
                 }, 
                 {
+                    "group": "diagnostics", 
+                    "id": "user-timings", 
+                    "weight": 0.0
+                }, 
+                {
+                    "group": "diagnostics", 
+                    "id": "bootup-time", 
+                    "weight": 0.0
+                }, 
+                {
+                    "group": "diagnostics", 
+                    "id": "mainthread-work-breakdown", 
+                    "weight": 0.0
+                }, 
+                {
+                    "group": "diagnostics", 
+                    "id": "font-display", 
+                    "weight": 0.0
+                }, 
+                {
                     "id": "network-requests", 
                     "weight": 0.0
                 }, 
@@ -3435,31 +3455,11 @@
                     "weight": 0.0
                 }, 
                 {
-                    "group": "diagnostics", 
-                    "id": "user-timings", 
-                    "weight": 0.0
-                }, 
-                {
-                    "group": "diagnostics", 
-                    "id": "bootup-time", 
-                    "weight": 0.0
-                }, 
-                {
                     "id": "screenshot-thumbnails", 
                     "weight": 0.0
                 }, 
                 {
                     "id": "final-screenshot", 
-                    "weight": 0.0
-                }, 
-                {
-                    "group": "diagnostics", 
-                    "id": "mainthread-work-breakdown", 
-                    "weight": 0.0
-                }, 
-                {
-                    "group": "diagnostics", 
-                    "id": "font-display", 
                     "weight": 0.0
                 }
             ], 
