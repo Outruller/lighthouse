@@ -199,7 +199,7 @@ class FontSize extends Audit {
       title: str_(UIStrings.title),
       failureTitle: str_(UIStrings.failureTitle),
       description: str_(UIStrings.description),
-      requiredArtifacts: ['FontSize', 'URL', 'Viewport'],
+      requiredArtifacts: ['FontSize', 'URL', 'MetaElements'],
     };
   }
 
@@ -212,7 +212,8 @@ class FontSize extends Audit {
     if (!hasViewportSet) {
       return {
         rawValue: false,
-        explanation: 'Text is illegible because of a missing viewport config',
+        explanation:
+          'Text is illegible because there\'s no viewport meta tag optimized for mobile screens',
       };
     }
 
