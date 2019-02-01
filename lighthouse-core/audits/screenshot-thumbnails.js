@@ -12,7 +12,7 @@ const Speedline = require('../computed/speedline.js');
 const Interactive = require('../computed/metrics/interactive.js');
 
 const NUMBER_OF_THUMBNAILS = 10;
-const THUMBNAIL_WIDTH = 120;
+const THUMBNAIL_WIDTH = 960;
 
 /** @typedef {LH.Artifacts.Speedline['frames'][0]} SpeedlineFrame */
 
